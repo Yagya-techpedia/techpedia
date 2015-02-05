@@ -206,7 +206,7 @@
 													<span class="input-group-addon">Password *</span> <input name="password" type="password" id="password"
 														class="form-control" placeholder="Password" ng-model="register.password" required
 														ng-minlength="6" ng-maxlength="16" ng-pattern="/^(?=.*?[A-Za-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{6,}$/" data-toggle='tooltip' data-placement='right' 
-														title='Password should contain atleast six character which includes atleast one numeric value and one special character'/>
+														title='Password should contain a minimum of 6 and a maximun of 16 characters with atleast one numeric value and one special character'/>
 												</div>
 
 												<!-- <div class="alert alert-sm alert-danger alert-dismissible" role="alert"
