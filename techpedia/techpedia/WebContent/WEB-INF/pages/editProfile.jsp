@@ -360,9 +360,9 @@
 												<div class="col-xs-12 col-md-6">
 													<div class="input-group input-group-sm">
 														<span class="input-group-addon" style="border-right: 1px solid #ccc; width: 138px;">Year
-														</span> <input name="completionYear" id="studentcompletionyear" type="text"
-															class="form-control" placeholder="Completion year" ng-model="edit.completionYear" /><span
-															class="input-group-addon">YYYY-MM-DD</span>
+														</span> <input onkeypress='noTyping(event)' id="studentCompletionYear" name="completionYear" type="text"
+															class="form-control" placeholder="Completion year" ng-model="edit.completionYear" />
+															<span class="input-group-addon" style="border-left: 1px solid #ccc">YYYY-MM-DD</span>
 													</div>
 												</div>
 												<div class="col-xs-12">&nbsp;</div>
@@ -389,14 +389,22 @@
 													<div class="input-group input-group-sm">
 														<span class="input-group-addon">Branch</span>
 														<div class="col-xs-12">
-															<input type="text" class="form-control" placeholder="Search branches"
-																ng-model="searchTerm" ng-change="search()" value="" />
+															<input type="text" class="form-control"  id="branchIdOfStudent2"
+																ng-model="edit.branchIdOfStudent" type="text" class="form-control" ng-change="search()" value="" />
 														</div>
-														<div class="col-xs-12">
+														
+														
+												<!-- 		<div class="col-xs-12"> 
+													<input type="text" class="form-control" placeholder="Search branches" id="branchIdOfStudent2"
+														ng-model="register.branchIdOfStudent" ng-change="search()" value=""  required data-toggle='tooltip' data-placement='right' 
+														title="Please enter Branch"/>
+												</div>  -->
+														
+														<!-- <div class="col-xs-12">
 															<select class="form-control" ng-model="edit.branchIdOfStudent"
 																ng-options="item.branchId as item.projBranchDesc for item in data">
 															</select>
-														</div>
+														</div> -->
 													</div>
 												</div>
 											</div>
@@ -531,13 +539,13 @@
 														<span class="input-group-addon">Speciality </span>
 														<div class="col-xs-12">
 															<input type="text" class="form-control" placeholder="Search branches"
-																ng-model="searchTerm" ng-change="search()" value="" />
+																ng-model="edit.specializationOfFaculty" ng-change="search()" value="" />
 														</div>
-														<div class="col-xs-12">
+														<!-- <div class="col-xs-12">
 															<select class="form-control" ng-model="edit.specializationOfFaculty"
 																ng-options="item.branchId as item.projBranchDesc for item in data">
 															</select>
-														</div>
+														</div> -->
 													</div>
 												</div>
 												<div class="col-xs-12 col-md-6">
@@ -616,13 +624,13 @@
 														<span class="input-group-addon">Speciality </span>
 														<div class="col-xs-12">
 															<input type="text" class="form-control" placeholder="Search branches"
-																ng-model="searchTerm" ng-change="search()" value="" />
+																ng-model="edit.branchIdOfMentor" ng-change="search()" value="" />
 														</div>
-														<div class="col-xs-12">
+														<!-- <div class="col-xs-12">
 															<select class="form-control" ng-model="edit.branchIdOfMentor"
 																ng-options="item.branchId as item.projBranchDesc for item in data">
 															</select>
-														</div>
+														</div> -->
 													</div>
 												</div>
 												<div class="col-xs-12 col-md-6">
