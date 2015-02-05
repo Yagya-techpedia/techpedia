@@ -1247,10 +1247,10 @@ function ProjectDetail($scope, $http) {
 					alert('Failed to delete comment');
 				else {
 					if (type === 'public') {
-						var index = $scope.publicComment.indexOf(comment.projComment);
-						$scope.teamComments.splice(index, 1);
+						var index = $scope.publicComments.indexOf(comment);
+						$scope.publicComments.splice(index, 1);
 					} else {
-						var index = $scope.teamComment.indexOf(comment.projComment);
+						var index = $scope.teamComments.indexOf(comment);
 						console.log(comment.projComment);
 						console.log($scope.teamComment);
 						$scope.teamComments.splice(index, 1);
@@ -1421,7 +1421,7 @@ techpedia.controller('EditProfileController', function($scope, $http) {
 			$scope.message.push("Possibly the service is down, Please contact the admin if problem persists.");
 		});
 
-		$scope.data = [ {
+		/*$scope.data = [ {
 			"branchId" : 1,
 			"projBranchDesc" : "Chemical Engineering"
 		}, {
@@ -1436,7 +1436,7 @@ techpedia.controller('EditProfileController', function($scope, $http) {
 		},{
 			"branchId" : 5,
 			"projBranchDesc" : "Computer Science"
-		} ];
+		} ];*/
 	};
 
 	$scope.search = function() {
@@ -1525,7 +1525,7 @@ techpedia.controller('RegisterController', function($scope, $http) {
 		}
 	}, true);
 
-	$scope.InitLoad = function() {
+/*	$scope.InitLoad = function() {
 		$scope.data = [ {
 			"branchId" : 1,
 			"projBranchDesc" : "Chemical Engineering"
@@ -1543,7 +1543,7 @@ techpedia.controller('RegisterController', function($scope, $http) {
 			"branchId" : 5,
 			"projBranchDesc" : "Computer Science"
 		}];
-	};
+	};*/
 
 	$scope.search = function() {
 		// alert($scope.form.searchTerm);
@@ -1586,7 +1586,7 @@ techpedia.controller('RegisterController', function($scope, $http) {
 techpedia.controller('AddChallengeController', function($scope, $http) {
 	$scope.data = {};
 
-	$scope.InitChallengeLoad = function() {
+	/*$scope.InitChallengeLoad = function() {
 		$scope.data = [ {
 			"challengTypeId" : 10,
 			"challengTypeDesc" : "Academic"
@@ -1597,7 +1597,7 @@ techpedia.controller('AddChallengeController', function($scope, $http) {
 			"challengTypeId" : 30,
 			"challengTypeDesc" : "Innovation"
 		}];
-	};
+	};*/
 
 	$scope.searchChallengeType = function() {
 	//	alert($scope.form.searchTerm);
