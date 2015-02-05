@@ -78,7 +78,7 @@
 
 							<tr>
 								<td>Degree</td>
-								<td>{{mentor.mentorProfile}}</td>
+								<td>{{mentor.degreeOfMentor}}</td>
 							</tr>
 							<tr>
 								<td>Experience</td>
