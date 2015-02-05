@@ -24,7 +24,7 @@ public class SessionCheckInterceptor extends HandlerInterceptorAdapter {
 		restrictedPages.add("mentorDetails");
 		restrictedPages.add("ideate");
 		restrictedPages.add("addMentor");
-
+		restrictedPages.add("logout");
 		restrictedPages.add("editProject");
 		restrictedPages.add("manageProjects");
 		restrictedPages.add("teamDetails");
