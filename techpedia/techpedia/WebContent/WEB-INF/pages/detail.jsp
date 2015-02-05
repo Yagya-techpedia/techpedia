@@ -163,7 +163,7 @@
 										<div class="panel-body">
 											<ul class="list-group">
 												<li class="list-group-item" ng-repeat="comment in publicComments"><span
-													class="badge" ng-click="deleteComment(comment,'team')"
+													class="badge" ng-click="deleteComment(comment,'public')"
 													ng-show="registerId==comment.regstrId||registerId==comment.projTeamLeaderId"
 													style="cursor: pointer;">X</span><span class="badge">{{comment.fName}}
 														{{comment.lName}}</span> {{comment.projComment}}</li>
