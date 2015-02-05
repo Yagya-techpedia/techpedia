@@ -45,6 +45,8 @@ public class UserProfileVO {
 		this.branchIdOfFaculty = branchIdOfFaculty;
 	}
 
+	
+	
 	// USR_MNGT_MASTER
 	private long rgstrId;
 	private String firstName;
